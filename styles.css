@@ -28,20 +28,23 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .fv {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  row-gap: 10px;
+  border: 1px black solid;  
 }
 
 .resume {
   margin: 50px auto;
   border: 1px solid #f5f5f5;
   box-shadow: 1px 1px 7px 7px #f5f5f5;
-  padding: 30px 0;
-  max-width: 900px;
+  padding: 10px 0;
+  max-width: 1200px;
 }
 
 .resume__block {
@@ -68,7 +71,8 @@ body {
     margin-right: 0;
   }
 }
-Contact info styles
+
+/* Contact info styles */
 
 .contact-info__header,
 .contact-info__sub-header {
@@ -132,7 +136,8 @@ Contact info styles
   border: 3px solid;
   border-color: var(--text-decoration-color);
 }
-Intro and skills styles
+
+/* Intro and skills styles */
 
 .intro {
   display: flex;
@@ -170,7 +175,8 @@ Intro and skills styles
   color: var(--secondary-text-color);
   text-align: justify;
 }
-Experience and additional info styles
+
+/* Experience and additional info styles */
 
 .experiences {
   flex: 1 1 60%;
